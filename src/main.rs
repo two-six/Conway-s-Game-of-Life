@@ -1,12 +1,10 @@
 use game_of_life::game;
 use crossterm::Result;
-use clap::{Arg, Command};
+use clap::{Arg, command};
 use std::process::exit;
 
 fn main() -> Result<()> {
-    let app = Command::new("Game of Life")
-        .version("1.0")
-        .author("Two-Six")
+    let app = command!()
         .arg(
             Arg::new("time")
                 .long("time")
