@@ -35,6 +35,5 @@ fn main() -> Result<()> {
     let f: &str = args.value_of("file").unwrap();
 
     game::play(&t, f)?;
-    println!();
     Ok(())
 }
